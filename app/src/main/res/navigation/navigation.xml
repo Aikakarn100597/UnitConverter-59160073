@@ -9,5 +9,9 @@
         />
     </fragment>
     <fragment android:id="@+id/unitConverter" android:name="com.example.unitconverter.unitConverter"
-              android:label="fragment_unit_converter" tools:layout="@layout/fragment_unit_converter"/>
+              android:label="fragment_unit_converter" tools:layout="@layout/fragment_unit_converter">
+        <action android:id="@+id/action_unitConverter_to_changeUnitConvert" app:destination="@id/changeUnitConvert"/>
+    </fragment>
+    <fragment android:id="@+id/changeUnitConvert" android:name="com.example.unitconverter.changeUnitConvert"
+              android:label="changeUnitConvert"/>
 </navigation>
