@@ -7,6 +7,8 @@
     <string name="length_button">ความยาว</string>
     <string name="weight_button">น้ำหนัก</string>
     <string name="temperature_button">อุณหภูมิ</string>
+    <string name="change_unit_text">แปลงหน่วยความยาว</string>
+    <string name="confirm_button">แปลง</string>
 
     <string-array name="lengthUnit">
         <item>เมตร</item>
