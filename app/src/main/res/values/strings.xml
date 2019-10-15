@@ -7,4 +7,33 @@
     <string name="length_button">ความยาว</string>
     <string name="weight_button">น้ำหนัก</string>
     <string name="temperature_button">อุณหภูมิ</string>
+
+    <string-array name="lengthUnit">
+        <item>เมตร</item>
+        <item>กิโลเมตร</item>
+        <item>ฟุต</item>
+        <item>เซนติเมตร</item>
+        <item>มิลลิเมตร</item>
+        <item>นิ้ว</item>
+        <item>หลา</item>
+        <item>เดซิเมตร</item>
+        <item>ไมล์</item>
+    </string-array>
+
+    <string-array name="weightUnit">
+        <item>กิโลกรัม</item>
+        <item>กรัม</item>
+        <item>ตัน</item>
+        <item>กะรัต</item>
+        <item>ปอนด์</item>
+        <item>ออนซ์</item>
+    </string-array>
+
+    <string-array name="temperatureUnit">
+        <item>องศาเซลเซียส</item>
+        <item>องศาฟาเรนไฮต์</item>
+        <item>เคลวิน</item>
+        <item>องศาโรเมอร์</item>
+    </string-array>
+
 </resources>

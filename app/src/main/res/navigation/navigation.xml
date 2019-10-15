@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/navigation">
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation" app:startDestination="@id/firstPageFragment">
 
+    <fragment android:id="@+id/firstPageFragment" android:name="com.example.unitconverter.firstPageFragment"
+              android:label="firstPageFragment">
+        <action android:id="@+id/action_firstPageFragment_to_unitConverter" app:destination="@id/unitConverter"
+        />
+    </fragment>
+    <fragment android:id="@+id/unitConverter" android:name="com.example.unitconverter.unitConverter"
+              android:label="fragment_unit_converter" tools:layout="@layout/fragment_unit_converter"/>
 </navigation>
