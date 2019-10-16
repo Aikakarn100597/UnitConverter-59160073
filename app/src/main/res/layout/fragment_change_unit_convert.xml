@@ -26,7 +26,7 @@
                 android:background="#645CA4"/>
 
         <TextView
-                android:text="แปลงจาก:"
+                android:text="@string/from_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/form_text"
@@ -37,7 +37,7 @@
                 app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="70dp"/>
 
         <TextView
-                android:text="เป็น:"
+                android:text="@string/to_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/to_text"
@@ -61,14 +61,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Name"
                 android:ems="10"
                 android:id="@+id/form_editText"
                 android:textSize="18sp" android:layout_marginTop="40dp"
                 app:layout_constraintTop_toBottomOf="@+id/form_text" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/form_unit"/>
+                app:layout_constraintEnd_toStartOf="@+id/from_unit" android:hint="@string/put_number"/>
         <TextView
-                android:text="0.001"
+                android:text="@string/change_to_unit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/to_textView" android:textSize="18sp"
@@ -76,16 +75,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/to_text" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/to_unit"/>
         <TextView
-                android:text="เมตร"
+                android:text="@string/from_unit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/form_unit"
+                android:id="@+id/from_unit"
                 android:textColor="@android:color/black" android:textSize="18sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/form_editText"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/form_editText"
         />
         <TextView
-                android:text="กิโลเมตร"
+                android:text="@string/to_unit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/to_unit"

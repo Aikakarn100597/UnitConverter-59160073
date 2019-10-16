@@ -9,6 +9,12 @@
     <string name="temperature_button">อุณหภูมิ</string>
     <string name="change_unit_text">แปลงหน่วยความยาว</string>
     <string name="confirm_button">แปลง</string>
+    <string name="from_text">แปลงจาก:</string>
+    <string name="to_text">เป็น:</string>
+    <string name="from_unit_text">เมตร</string>
+    <string name="to_unit_text">กิโลเมตร</string>
+    <string name="put_number">ใส่ตัวเลข</string>
+    <string name="change_to_unit_text">0.001</string>
 
     <string-array name="lengthUnit">
         <item>เมตร</item>
