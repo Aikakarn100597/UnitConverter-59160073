@@ -34,6 +34,10 @@ class unitConverter : Fragment() {
             view.findNavController().navigate(R.id.action_unitConverter_to_changeUnitConvert)
         }
 
+        binding.cancelButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_unitConverter_to_firstPageFragment)
+        }
+
         return binding.root
 //        return inflater.inflate(R.layout.fragment_unit_converter, container, false)
     }

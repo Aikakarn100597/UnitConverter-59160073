@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import com.example.unitconverter.databinding.FragmentChangeUnitConvertBinding
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,7 +27,16 @@ class changeUnitConvert : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_change_unit_convert, container, false)
+
+        val binding = DataBindingUtil.inflate<FragmentChangeUnitConvertBinding>(inflater,R.layout.fragment_change_unit_convert,container,false)
+
+        binding.cancelButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_changeUnitConvert_to_unitConverter)
+        }
+
+        return binding.root
+
+//        return inflater.inflate(R.layout.fragment_change_unit_convert, container, false)
     }
 
 
