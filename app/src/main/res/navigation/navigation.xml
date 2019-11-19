@@ -7,6 +7,9 @@
               android:label="firstPageFragment">
         <action android:id="@+id/action_firstPageFragment_to_unitConverter" app:destination="@id/unitConverter"
         />
+        <action
+                android:id="@+id/action_firstPageFragment_to_weightUnitFragment"
+                app:destination="@id/weightUnitFragment" />
     </fragment>
     <fragment android:id="@+id/unitConverter" android:name="com.example.unitconverter.unitConverter"
               android:label="fragment_unit_converter" tools:layout="@layout/fragment_unit_converter">
@@ -19,4 +22,9 @@
     </fragment>
     <fragment android:id="@+id/AboutFragment" android:name="com.example.unitconverter.AboutFragment"
               android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+    <fragment
+            android:id="@+id/weightUnitFragment"
+            android:name="com.example.unitconverter.weightUnitFragment"
+            android:label="fragment_weight_unit"
+            tools:layout="@layout/fragment_weight_unit" />
 </navigation>

@@ -1,6 +1,7 @@
 package com.example.unitconverter
 
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -32,15 +33,13 @@ class firstPageFragment : Fragment() {
             view.findNavController().navigate(R.id.action_firstPageFragment_to_unitConverter)
         }
 
-        binding.temperatureButton.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_firstPageFragment_to_unitConverter)
-        }
-
         binding.weightButton.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_firstPageFragment_to_unitConverter)
+            view.findNavController().navigate(R.id.action_firstPageFragment_to_weightUnitFragment)
         }
 
         setHasOptionsMenu(true)
+
+        Log.i("firstPageFragment", "onCreateView Called")
 
         return binding.root
 //        return inflater.inflate(R.layout.fragment_first_page, container, false)
@@ -56,4 +55,36 @@ class firstPageFragment : Fragment() {
             view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
 
+    override fun onStart() {
+        super.onStart()
+        Log.i("firstPageFragment", "onStart Called")
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i("firstPageFragment", "onCreate called")
+    }
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        Log.i("firstPageFragment", "onActivityCreated called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.i("firstPageFragment", "onResume called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.i("firstPageFragment", "onPause called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.i("firstPageFragment", "onStop called")
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.i("firstPageFragment", "onDestroyView called")
+    }
+    override fun onDetach() {
+        super.onDetach()
+        Log.i("firstPageFragment", "onDetach called")
+    }
 }

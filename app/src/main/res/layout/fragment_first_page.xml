@@ -31,26 +31,22 @@
                 app:layout_constraintHorizontal_bias="0.501" app:layout_constraintBottom_toTopOf="@+id/weight_button"
                 android:background="#6BEBFC" android:layout_marginLeft="50dp" android:layout_marginRight="50dp"
                 android:textSize="18sp"/>
+
         <Button
-                android:text="@string/temperature_button"
+                android:id="@+id/weight_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/temperature_button" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/weight_button"
-                android:layout_marginBottom="80dp" android:background="#6BEBFC" android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp" android:textSize="18sp"/>
-        <Button
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="80dp"
+                android:background="#6BEBFC"
                 android:text="@string/weight_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/weight_button" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintTop_toBottomOf="@+id/lengthButton"
-                app:layout_constraintBottom_toTopOf="@+id/temperature_button" android:background="#6BEBFC"
-                android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:textSize="18sp"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lengthButton" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
