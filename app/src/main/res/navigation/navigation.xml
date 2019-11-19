@@ -26,5 +26,21 @@
             android:id="@+id/weightUnitFragment"
             android:name="com.example.unitconverter.weightUnitFragment"
             android:label="fragment_weight_unit"
-            tools:layout="@layout/fragment_weight_unit" />
+            tools:layout="@layout/fragment_weight_unit" >
+        <action
+                android:id="@+id/action_weightUnitFragment_to_firstPageFragment"
+                app:destination="@id/firstPageFragment" />
+        <action
+                android:id="@+id/action_weightUnitFragment_to_changeWeightUnitFragment2"
+                app:destination="@id/changeWeightUnitFragment2" />
+    </fragment>
+    <fragment
+            android:id="@+id/changeWeightUnitFragment2"
+            android:name="com.example.unitconverter.changeWeightUnitFragment"
+            android:label="fragment_change_weight_unit"
+            tools:layout="@layout/fragment_change_weight_unit" >
+        <action
+                android:id="@+id/action_changeWeightUnitFragment2_to_weightUnitFragment"
+                app:destination="@id/weightUnitFragment" />
+    </fragment>
 </navigation>

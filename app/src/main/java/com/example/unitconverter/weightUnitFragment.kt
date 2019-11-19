@@ -30,6 +30,14 @@ class weightUnitFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentWeightUnitBinding>(inflater,R.layout.fragment_weight_unit,container,false)
 
+        binding.confirmButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_weightUnitFragment_to_changeWeightUnitFragment2)
+        }
+
+        binding.cancelButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_weightUnitFragment_to_firstPageFragment)
+        }
+
         Log.i("temperatureUnitFragment", "onCreateView Called")
 
         return binding.root

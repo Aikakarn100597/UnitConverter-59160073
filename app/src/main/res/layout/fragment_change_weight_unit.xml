@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context="com.example.unitconverter.changeUnitConvert">
+        tools:context="com.example.unitconverter.changeWeightUnitFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/lengthUnitChange">
+            android:id="@+id/weightUnitChange">
 
         <Button
                 android:text="@string/cancel"
@@ -91,7 +91,7 @@
                 android:textColor="@android:color/black" android:textSize="18sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/form_editText"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/form_editText"
-        />
+                />
         <TextView
                 android:text="@string/to_unit_text"
                 android:layout_width="wrap_content"

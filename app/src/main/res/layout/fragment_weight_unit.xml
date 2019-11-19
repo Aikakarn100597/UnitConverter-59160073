@@ -19,7 +19,7 @@
                 android:layout_marginRight="30dp"
                 android:background="#645CA4"
                 android:fontFamily="@font/roboto_thin"
-                android:text="@string/change_temp_unit_text"
+                android:text="@string/change_weight_unit_text"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
