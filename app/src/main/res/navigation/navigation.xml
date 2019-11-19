@@ -27,6 +27,9 @@
         <argument
                 android:name="unitTo"
                 app:argType="string" />
+        <action
+                android:id="@+id/action_changeUnitConvert_to_firstPageFragment"
+                app:destination="@id/firstPageFragment" />
     </fragment>
     <fragment android:id="@+id/AboutFragment" android:name="com.example.unitconverter.AboutFragment"
               android:label="fragment_about" tools:layout="@layout/fragment_about"/>
@@ -56,5 +59,8 @@
         <argument
                 android:name="unitTo"
                 app:argType="string" />
+        <action
+                android:id="@+id/action_changeWeightUnitFragment2_to_firstPageFragment"
+                app:destination="@id/firstPageFragment" />
     </fragment>
 </navigation>

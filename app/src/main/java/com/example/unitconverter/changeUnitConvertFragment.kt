@@ -48,6 +48,11 @@ class changeUnitConvert : Fragment() {
             view.findNavController().navigate(R.id.action_changeUnitConvert_to_unitConverter)
         }
 
+        binding.backFirstButton.setOnClickListener { view ->
+            view.findNavController()
+                .navigate(R.id.action_changeUnitConvert_to_firstPageFragment)
+        }
+
         Log.i("changeUnitConvert", "onCreateView Called")
 
         return binding.root

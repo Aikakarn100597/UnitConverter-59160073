@@ -38,7 +38,13 @@ class changeWeightUnitFragment : Fragment() {
         }
 
         binding.cancelButton.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_changeWeightUnitFragment2_to_weightUnitFragment)
+            view.findNavController()
+                .navigate(R.id.action_changeWeightUnitFragment2_to_weightUnitFragment)
+        }
+
+        binding.backFirstButton.setOnClickListener { view ->
+            view.findNavController()
+                .navigate(R.id.action_changeWeightUnitFragment2_to_firstPageFragment)
         }
 
         Log.i("temperatureUnitFragment", "onCreateView Called")
