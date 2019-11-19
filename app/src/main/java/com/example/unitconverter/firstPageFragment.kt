@@ -3,6 +3,7 @@ package com.example.unitconverter
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
@@ -31,10 +32,18 @@ class firstPageFragment : Fragment() {
 
         binding.lengthButton.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_firstPageFragment_to_unitConverter)
+
+            var alert: Int = Toast.LENGTH_SHORT
+            var toast = Toast.makeText(context, "แปลงหน่วยความยาว", alert)
+            toast.show()
         }
 
         binding.weightButton.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_firstPageFragment_to_weightUnitFragment)
+
+            var alert: Int = Toast.LENGTH_SHORT
+            var toast = Toast.makeText(context, "แปลงหน่วยน้ำหนัก", alert)
+            toast.show()
         }
 
         setHasOptionsMenu(true)

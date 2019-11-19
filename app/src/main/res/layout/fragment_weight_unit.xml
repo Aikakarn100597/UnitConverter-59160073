@@ -29,7 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spinnerWF"
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:textSize="24sp"
@@ -40,10 +40,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/form_text"/>
 
         <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/spinnerWT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner"
+                android:layout_below="@+id/spinnerWF"
                 android:textSize="24sp"
                 android:entries="@array/lengthUnit"
                 android:spinnerMode="dropdown"
@@ -68,13 +68,13 @@
                 android:textColor="@android:color/black" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="50dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="336dp" android:textSize="16sp" android:layout_marginTop="50dp"
-                app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+                app:layout_constraintTop_toBottomOf="@+id/spinnerWF"/>
         <Button
                 android:text="@string/confirm_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/confirmButton"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerWT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" android:background="#A0EE47"
                 android:layout_marginLeft="60dp" android:layout_marginRight="60dp"

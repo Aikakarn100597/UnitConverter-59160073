@@ -13,12 +13,20 @@
     </fragment>
     <fragment android:id="@+id/unitConverter" android:name="com.example.unitconverter.unitConverter"
               android:label="fragment_unit_converter" tools:layout="@layout/fragment_unit_converter">
-        <action android:id="@+id/action_unitConverter_to_changeUnitConvert" app:destination="@id/changeUnitConvert"/>
+        <action
+                android:id="@+id/action_unitConverter_to_changeUnitConvert"
+                app:destination="@+id/changeUnitConvert" />
         <action android:id="@+id/action_unitConverter_to_firstPageFragment" app:destination="@id/firstPageFragment"/>
     </fragment>
     <fragment android:id="@+id/changeUnitConvert" android:name="com.example.unitconverter.changeUnitConvert"
               android:label="changeUnitConvert">
         <action android:id="@+id/action_changeUnitConvert_to_unitConverter" app:destination="@id/unitConverter"/>
+        <argument
+                android:name="unitFrom"
+                app:argType="string" />
+        <argument
+                android:name="unitTo"
+                app:argType="string" />
     </fragment>
     <fragment android:id="@+id/AboutFragment" android:name="com.example.unitconverter.AboutFragment"
               android:label="fragment_about" tools:layout="@layout/fragment_about"/>

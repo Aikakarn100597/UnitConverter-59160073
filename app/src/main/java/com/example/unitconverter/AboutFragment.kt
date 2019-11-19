@@ -41,6 +41,7 @@ class AboutFragment : Fragment() {
 //        return inflater.inflate(R.layout.fragment_about, container, false)
     }
 
+    // SHARE
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         if (menu != null) {
             if (inflater != null) {
@@ -68,6 +69,7 @@ class AboutFragment : Fragment() {
 
         }
     }
+    // SHARE
 
 //    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
 //        super.onCreateOptionsMenu(menu, inflater)

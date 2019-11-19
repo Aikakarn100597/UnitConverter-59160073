@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.unitconverter.databinding.FragmentChangeUnitConvertBinding
+import kotlinx.android.synthetic.main.fragment_change_unit_convert.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +31,13 @@ class changeUnitConvert : Fragment() {
         // Inflate the layout for this fragment
 
         val binding = DataBindingUtil.inflate<FragmentChangeUnitConvertBinding>(inflater,R.layout.fragment_change_unit_convert,container,false)
+
+        val args = changeUnitConvertArgs.fromBundle(arguments!!)
+
+        binding.apply {
+            fromUnit.text = args.unitFrom
+            toUnit.text = args.unitTo
+        }
 
         binding.cancelButton.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_changeUnitConvert_to_unitConverter)
