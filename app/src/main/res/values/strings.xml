@@ -14,7 +14,7 @@
     <string name="from_unit_text">เมตร</string>
     <string name="to_unit_text">กิโลเมตร</string>
     <string name="put_number">ใส่ตัวเลข</string>
-    <string name="change_to_unit_text">0.001</string>
+    <string name="change_to_unit_text">0.00</string>
     <string name="cancel">ยกเลิก</string>
     <string name="about">About</string>
     <string name="descript_about">แอพพลิเคชั่นแปลงหน่วยความยาว และน้ำหนัก</string>
