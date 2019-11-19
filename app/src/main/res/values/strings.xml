@@ -17,7 +17,7 @@
     <string name="change_to_unit_text">0.001</string>
     <string name="cancel">ยกเลิก</string>
     <string name="about">About</string>
-    <string name="descript_about">แอพพลิเคชั่นแปลงหน่วยความยาว อุณหภูมิ และน้ำหนัก</string>
+    <string name="descript_about">แอพพลิเคชั่นแปลงหน่วยความยาว และน้ำหนัก</string>
 
     <string-array name="lengthUnit">
         <item>เมตร</item>

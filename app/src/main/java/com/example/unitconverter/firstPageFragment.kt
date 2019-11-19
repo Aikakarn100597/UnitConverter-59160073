@@ -45,6 +45,8 @@ class firstPageFragment : Fragment() {
 //        return inflater.inflate(R.layout.fragment_first_page, container, false)
     }
 
+
+    // MENU ------
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater?.inflate(R.menu.option_menu, menu)
@@ -54,7 +56,9 @@ class firstPageFragment : Fragment() {
         return NavigationUI.onNavDestinationSelected(item!!,
             view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
+    // MENU ------
 
+    // LOGGING
     override fun onStart() {
         super.onStart()
         Log.i("firstPageFragment", "onStart Called")
