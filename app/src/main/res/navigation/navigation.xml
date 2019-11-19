@@ -50,5 +50,11 @@
         <action
                 android:id="@+id/action_changeWeightUnitFragment2_to_weightUnitFragment"
                 app:destination="@id/weightUnitFragment" />
+        <argument
+                android:name="unitFrom"
+                app:argType="string" />
+        <argument
+                android:name="unitTo"
+                app:argType="string" />
     </fragment>
 </navigation>

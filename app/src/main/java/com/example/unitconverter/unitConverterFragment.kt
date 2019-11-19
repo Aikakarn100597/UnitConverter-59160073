@@ -46,8 +46,8 @@ class unitConverter : Fragment() {
             // send value // Pass data between destinations
             view.findNavController().navigate(unitConverterDirections.actionUnitConverterToChangeUnitConvert(unitFrom, unitTo))
 
-            var alert: Int = Toast.LENGTH_SHORT
-            var toast = Toast.makeText(context, "${unitFrom} + ${unitTo}", alert)
+            val alert: Int = Toast.LENGTH_SHORT
+            val toast = Toast.makeText(context, "${unitFrom} + ${unitTo}", alert)
             toast.show()
         }
 
