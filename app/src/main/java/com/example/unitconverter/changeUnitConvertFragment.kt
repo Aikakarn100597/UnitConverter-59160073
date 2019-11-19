@@ -87,244 +87,133 @@ class changeUnitConvert : Fragment() {
                     } else if (args.unitTo == "ไมล์") {
                         result = num / 63360.00
                     }
+                } else if (args.unitFrom == "ฟุต") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num * 12.0
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "เมตร") {
+                        result = num * 0.3048
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num * 0.0003048
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num * 30.48
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 304.8
+                    } else if (args.unitTo == "หลา") {
+                        result = num / 3.0
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 5280.0
+                    }
+                } else if (args.unitFrom == "หลา") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num * 36.0
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num * 3.0
+                    } else if (args.unitTo == "เมตร") {
+                        result = num * 0.9144
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num / 1093.61
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num * 91.44
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 914.4
+                    } else if (args.unitTo == "หลา") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 1760.0
+                    }
+                } else if (args.unitFrom == "ไมล์") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num * 6330.0
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num * 5280.0
+                    } else if (args.unitTo == "เมตร") {
+                        result = num * 1609.34
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num * 1.60934
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num * 160934.0
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 1609340.0
+                    } else if (args.unitTo == "หลา") {
+                        result = num * 1760.0
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num.toDouble()
+                    }
+                } else if (args.unitFrom == "มิลลิเมตร") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num / 25.4
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num / 304.8
+                    } else if (args.unitTo == "เมตร") {
+                        result = num / 1000.00
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num / 1000000.0
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num / 10.00
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "หลา") {
+                        result = num / 914.4
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 1609000.0
+                    }
+                } else if (args.unitFrom == "เซนติเมตร") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num / 2.54
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num / 30.48
+                    } else if (args.unitTo == "เมตร") {
+                        result = num / 100.00
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num / 100000.0
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 10.0
+                    } else if (args.unitTo == "หลา") {
+                        result = num / 91.44
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 160934.0
+                    }
+                } else if (args.unitFrom == "เมตร") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num * 39.3701
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num * 3.28084
+                    } else if (args.unitTo == "เมตร") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num / 1000.0
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num * 100.0
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 1000.0
+                    } else if (args.unitTo == "หลา") {
+                        result = num * 1.09361
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 1609.34
+                    }
+                } else if (args.unitFrom == "กิโลเมตร") {
+                    if (args.unitTo == "นิ้ว") {
+                        result = num * 39370.1
+                    } else if (args.unitTo == "ฟุต") {
+                        result = num * 3280.84
+                    } else if (args.unitTo == "เมตร") {
+                        result = num * 1000.0
+                    } else if (args.unitTo == "กิโลเมตร") {
+                        result = num.toDouble()
+                    } else if (args.unitTo == "เซนติเมตร") {
+                        result = num * 100000.0
+                    } else if (args.unitTo == "มิลลิเมตร") {
+                        result = num * 1000000.0
+                    } else if (args.unitTo == "หลา") {
+                        result = num * 1093.61
+                    } else if (args.unitTo == "ไมล์") {
+                        result = num / 1.60934
+                    }
                 }
-
-//            case "feet":
-//            {
-//                switch(newU)
-//                {
-//                    case "inches":
-//
-//                    num2 = num1*12.0d;
-//                    break;
-//                    case "feet":
-//                    num2 = num1;
-//                    break;
-//                    case "yards":
-//
-//                    num2 = num1/3.0d;
-//                    break;
-//                    case "miles":
-//
-//                    num2 = num1/5280.0d;
-//                    break;
-//                    case "millimeters":
-//
-//                    num2 = num1*304.8d;
-//                    break;
-//                    case "centimeters":
-//
-//                    num2 = num1*30.48d;
-//                    break;
-//                    case "meters":
-//
-//                    num2 = num1*0.3048d;
-//                    break;
-//                    case "kilometers":
-//
-//                    num2 = num1*0.0003048d;
-//                    break;
-//                }
-//                break;
-//            }
-//            case "yards":
-//            {
-//                switch(newU) {
-//                    case "inches":
-//
-//                    num2 = num1 * 36.0d;
-//                    break;
-//                    case "feet":
-//
-//                    num2 = num1 * 3.0d;
-//                    break;
-//                    case "yards":
-//                    num2 = num1;
-//                    break;
-//                    case "miles":
-//
-//                    num2 = num1 / 1760.0d;
-//                    break;
-//                    case "millimeters":
-//
-//                    num2 = num1 * 914.4d;
-//                    break;
-//                    case "centimeters":
-//
-//                    num2 = num1*91.44d;
-//                    break;
-//                    case "meters":
-//                    num2 = num1*0.9144d;
-//                    break;
-//                    case "kilometers":
-//
-//                    num2 = num1/1093.61d;
-//                    break;
-//                }
-//                break;
-//            }
-//            case "miles":
-//            {
-//                switch(newU)
-//                {
-//                    case "inches":
-//
-//                    num2 = num1*6330.0d;
-//                    break;
-//                    case "feet":
-//
-//                    num2 = num1*5280.0d;
-//                    break;
-//                    case "yards":
-//
-//                    num2 = num1*1760.0d;
-//                    break;
-//                    case "miles":
-//                    num2 = num1;
-//                    break;
-//                    case "millimeters":
-//
-//                    num2 = num1*1609340.0d;
-//                    break;
-//                    case "centimeters":
-//
-//                    num2 = num1*160934.0d;
-//                    break;
-//                    case "meters":
-//
-//                    num2 = num1*1609.34d;
-//                    break;
-//                    case "kilometers":
-//
-//                    num2 = num1*1.60934d;
-//                    break;
-//                }
-//                break;
-//            }
-//            case "millimeters":
-//            {
-//                switch(newU)
-//                {
-//                    case "inches":
-//                    num2 = num1*25.4d;
-//                    break;
-//                    case "feet":
-//                    num2 = num1/304.8d;
-//                    break;
-//                    case "yards":
-//                    num2 = num1/914.4d;
-//                    break;
-//                    case "miles":
-//                    num2 = num1/1609000.0d;
-//                    break;
-//                    case "millimeters":
-//                    num2 = num1;
-//                    break;
-//                    case "centimeters":
-//                    num2 = metricConverter.metricConvert(num1, "milli", "centi");
-//                    break;
-//                    case "meters":
-//                    num2 = metricConverter.metricConvert(num1, "milli", "unit");
-//                    break;
-//                    case "kilometers":
-//                    num2 = metricConverter.metricConvert(num1, "milli", "kilo");
-//                    break;
-//                }
-//                break;
-//            }
-//
-//            case "centimeters":
-//            {
-//                switch(newU)
-//                {
-//                    case "inches":
-//                    num2 = num1 / 2.54d;
-//                    break;
-//                    case "feet":
-//                    num2 = num1 / 30.48d;
-//                    break;
-//                    case "yards":
-//                    num2 = num1 / 91.44d;
-//                    break;
-//                    case "miles":
-//                    num2 = num1/160934.0d;
-//                    break;
-//                    case "millimeters":
-//                    num2 = metricConverter.metricConvert(num1, "centi", "milli");
-//                    break;
-//                    case "centimeters":
-//                    num2 = num1;
-//                    break;
-//                    case "meters":
-//                    num2 = metricConverter.metricConvert(num1, "centi", "unit");
-//                    break;
-//                    case "kilometers":
-//                    num2 = metricConverter.metricConvert(num1, "centi", "kilo");
-//                    break;
-//                }
-//                break;
-//            }
-//            case "meters":
-//            {
-//                switch(newU) {
-//                    case "inches":
-//                    num2 = num1 * 39.3701d;
-//                    break;
-//                    case "feet":
-//                    num2 = num1 * 3.28084d;
-//                    break;
-//                    case "yards":
-//                    num2 = num1*1.09361d;
-//                    break;
-//                    case "miles":
-//                    num2 = num1/1609.34d;
-//                    break;
-//                    case "millimeters":
-//                    num2 = metricConverter.metricConvert(num1, "unit", "milli");
-//                    break;
-//                    case "centimeters":
-//                    num2 = metricConverter.metricConvert(num1, "unit", "centi");
-//                    break;
-//                    case "meters":
-//                    num2 = num1;
-//                    break;
-//                    case "kilometers":
-//                    num2 = metricConverter.metricConvert(num1, "unit", "kilo");
-//                    break;
-//                }
-//                break;
-//            }
-//            case "kilometers":
-//            {
-//                switch(newU)
-//                {
-//                    case "inches":
-//                    num2 = num1*39370.1d;
-//                    break;
-//                    case "feet":
-//                    num2 = num1*3280.84d;
-//                    break;
-//                    case "yards":
-//                    num2 = num1*1093.61d;
-//                    break;
-//                    case "miles":
-//                    num2 = num1/1.60934d;
-//                    break;
-//                    case "millimeters":
-//                    num2 = metricConverter.metricConvert(num1, "kilo", "milli");
-//                    break;
-//                    case "centimeters":
-//                    num2 = metricConverter.metricConvert(num1, "kilo", "centi");
-//                    break;
-//                    case "meters":
-//                    num2 = metricConverter.metricConvert(num1, "kilo", "unit");
-//                    break;
-//                    case "kilometers":
-//                    num2 = num1;
-//                    break;
-//                }
-//                break;
-//            }
             }
         binding.toTextView.text = "%.2f".format(result).toDouble().toString()
     }
